@@ -5,8 +5,10 @@ import Banner from "./components/Banner";
 import Stats from "./components/Stats";
 import MainSection from "./components/MainSection";
 import Steps from "./components/Steps";
+import Pricing from "./components/Pricing";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Transform_Footer from "./components/Transform_Footer.jsx";
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -34,6 +36,8 @@ function App() {
       <Stats />
       <MainSection cartItems={cartItems} onAddToCart={handleCart} />
       <Steps />
+      <Pricing />
+      <Transform_Footer />
     </div>
   );
 }
