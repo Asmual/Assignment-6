@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 import writingIcon from "../assets/writing_2327400 1.png";
 import designIcon from "../assets/design-tool.png";
@@ -35,6 +36,7 @@ const ProductCard = ({ product, onAddToCart }) => {
   const handleBuyNow = () => {
     onAddToCart(product);
     setAdded(true);
+    toast.success(`${name} added to cart!`);
   };
 
   return (
@@ -69,6 +71,7 @@ const ProductCard = ({ product, onAddToCart }) => {
 
       <button
         onClick={handleBuyNow}
+        disabled={added}
         className={`mt-auto w-full font-semibold py-2 rounded-full transition-all duration-300 ${
           added
             ? "bg-green-600 text-white cursor-default"

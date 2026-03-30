@@ -1,7 +1,7 @@
 echo "# Assignment-6"
 git init
 git add .
-git commit -m ""
+git commit -m "fix: change base path for netlify"
 git branch -M main
 git remote add origin https://github.com/Asmual/Assignment-6.git
 git push -u origin main

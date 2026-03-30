@@ -1,6 +1,7 @@
 import { useState } from "react";
 import products from "../data/products.json";
 import ProductCard from "./ProductCard";
+import { toast } from "react-toastify";
 
 import writingIcon from "../assets/writing_2327400 1.png";
 import designIcon from "../assets/design-tool.png";
@@ -9,7 +10,7 @@ import operationIcon from "../assets/operation.png";
 import portfolioIcon from "../assets/portfolio.png";
 import socialIcon from "../assets/social-media.png";
 
-const iconMap = {
+const iconMap = { 
   "writing_2327400 1.png": writingIcon,
   "design-tool.png": designIcon,
   "camera-tools.png": cameraIcon,
@@ -64,7 +65,6 @@ const MainSection = ({ cartItems, onAddToCart }) => {
                 key={product.id}
                 product={product}
                 onAddToCart={onAddToCart}
-                iconMap={iconMap}
               />
             ))}
           </div>
@@ -100,7 +100,10 @@ const MainSection = ({ cartItems, onAddToCart }) => {
                         </div>
                       </div>
                       <button
-                        onClick={() => onAddToCart(item, true)}
+                        onClick={() => {
+                          onAddToCart(item, true);
+                          toast.error(`${item.name} removed from cart!`);
+                        }}
                         className="text-red-500 hover:text-red-700 font-semibold text-sm transition-colors"
                       >
                         Remove
@@ -117,7 +120,10 @@ const MainSection = ({ cartItems, onAddToCart }) => {
                 </div>
 
                 <button
-                  onClick={() => onAddToCart(null, false, true)}
+                  onClick={() => {
+                    onAddToCart(null, false, true);
+                    toast.success("Checkout successful! Cart cleared.");
+                  }}
                   className="w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 rounded-full transition-colors"
                 >
                   Proceed To Checkout
