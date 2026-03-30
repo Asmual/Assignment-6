@@ -8,7 +8,7 @@
     "tag": "Best Seller",
     "tagType": "best seller",
     "features": ["Unlimited AI generations", "50+ writing templates", "Grammar checker"],
-    "icon": "fa-solid fa-pen-nib"
+    "icon": "writing_2327400 1.png"
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "tag": "Popular",
     "tagType": "popular",
     "features": ["2000+ templates", "Monthly updates", "Commercial license"],
-    "icon": "fa-solid fa-vector-square"
+    "icon": "design-tool.png"
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "tag": "New",
     "tagType": "new",
     "features": ["10M+ assets", "Commercial use", "No attribution"],
-    "icon": "fa-solid fa-camera"
+    "icon": "camera-tools.png"
   },
   {
     "id": 4,
@@ -41,18 +41,18 @@
     "tag": "Popular",
     "tagType": "popular",
     "features": ["Keyword research", "Site audit", "Competitor analysis"],
-    "icon": "fa-solid fa-magnifying-glass-chart"
+    "icon": "operation.png"
   },
   {
     "id": 5,
     "name": "Video Editor Suite",
-    "description": "Professional video editing software with AI-powered effects and auto-subtitles.",
+    "description": "Professional video editing with AI-powered effects and auto-subtitles.",
     "price": 59,
     "period": "yearly",
     "tag": "Best Seller",
     "tagType": "best seller",
     "features": ["4K export", "AI effects", "Auto subtitles"],
-    "icon": "fa-solid fa-film"
+    "icon": "portfolio.png"
   },
   {
     "id": 6,
@@ -63,28 +63,6 @@
     "tag": "New",
     "tagType": "new",
     "features": ["10 social accounts", "Analytics dashboard", "Bulk scheduling"],
-    "icon": "fa-solid fa-share-nodes"
-  },
-  {
-    "id": 7,
-    "name": "Resume Builder AI",
-    "description": "Create ATS-optimized resumes in minutes using AI-driven templates and suggestions.",
-    "price": 9,
-    "period": "one-time",
-    "tag": "Popular",
-    "tagType": "popular",
-    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
-    "icon": "fa-solid fa-file-lines"
-  },
-  {
-    "id": 8,
-    "name": "Email Marketing Hub",
-    "description": "Send beautiful email campaigns and automate your marketing funnels with ease.",
-    "price": 25,
-    "period": "monthly",
-    "tag": "Best Seller",
-    "tagType": "best seller",
-    "features": ["Unlimited emails", "Drag & drop editor", "Advanced analytics"],
-    "icon": "fa-solid fa-envelope-open-text"
+    "icon": "social-media.png"
   }
 ]
