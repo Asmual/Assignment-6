@@ -1,4 +1,5 @@
 import { useState } from "react";
+import cartIcon from "../assets/shopping-cart.png";
 
 const Navbar = ({ cartCount = 0 }) => {
   return (
@@ -19,7 +20,7 @@ const Navbar = ({ cartCount = 0 }) => {
 
         <div className="flex items-center gap-5">
           <div className="relative cursor-pointer">
-            <img src="../../B13-A6-DigiTools-Platform/assets/products/shopping-cart.png" alt="Cart" className=" w-5 h-5 hover:brightness-0 transition-opacity"/>
+            <img src={cartIcon} alt="Cart" className=" w-5 h-5 hover:brightness-0 transition-opacity"/>
             {cartCount > 0 && (
               <span className="absolute -top-2 -right-2 bg-purple-600 text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full">
                 {cartCount}
