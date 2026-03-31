@@ -5,3 +5,7 @@ git commit -m "3 steps section done"
 git branch -M main
 git remote add origin https://github.com/Asmual/Assignment-6.git
 git push -u origin main
+
+git add .
+git commit -m "Toast Integration"
+git push -u origin main
